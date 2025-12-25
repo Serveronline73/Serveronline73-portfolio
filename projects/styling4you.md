@@ -10,6 +10,15 @@ Ziel ist es, manuelle Prozesse zu reduzieren und sowohl für Betriebe als auch f
 > Der Quellcode dieses Projekts ist bewusst **privat**.  
 > Diese Seite beschreibt **Konzept, Architektur und Mehrwert**.  
   
+## Screenshots
+
+![Startscreen](../simulator_screenshot_0EE7AC43-443C-4422-8F15-ABC9B0BAE835.png)  
+
+![Salon-Besitzer-Login](../simulator_screenshot_3C98232C-324B-4859-A7F8-915B569668C1.png)  
+
+![Salon-Registrierung](../simulator_screenshot_D8A8D842-E811-4282-92F0-EB11BD5E8F5B.png)  
+
+![Kunden-Login](../simulator_screenshot_EDD041FF-235A-4B5B-B161-0BDDE7DB59BF.png) 
 ---  
   
 ## Ausgangslage / Problemstellung  
