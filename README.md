@@ -32,27 +32,27 @@ Die folgenden Bilder zeigen ausgewählte Bereiche der App. Mit der HTML -Einbe
 <p>
 <img src="start_screen.png" alt="Registrierungsseite" width="200"/>
 <img src="anmelde_screen_salon_besitzer.png" alt="App-Startseite" width="200"/>
-<img src="register_screen_salon_besitzer.png" alt="Login-Seite" width="300"/>
+<img src="register_screen_salon_besitzer.png" alt="Login-Seite" width="200"/>
 </p>
 <p>
 <img src="dashboard_uebersicht.png" alt="Salon-Dashboard" width="300"/>
 <img src="einstellung_screen.png" alt="Kundenansicht" width="300"/>
-<img src="salon_personalisieren_screen.png" alt="Feature-Details" width="300"/>
+<img src="salon_personalisieren_screen.png" alt="Feature-Details" width="200"/>
 </p>
 <p>
-<img src="oeffnungszeiten_screen.png" alt="Weitere Funktionen 1" width="300"/>
-<img src="kunden_information_screen.png" alt="Weitere Funktionen 2" width="300"/>
-<img src="service_verwalten.png" alt="Weitere Funktionen 3" width="300"/>
+<img src="oeffnungszeiten_screen.png" alt="Weitere Funktionen 1" width="200"/>
+<img src="kunden_information_screen.png" alt="Weitere Funktionen 2" width="200"/>
+<img src="service_verwalten.png" alt="Weitere Funktionen 3" width="200"/>
 </p>
 <p> 
-<img src="service_bearbeiten.png" width="300"/>
-<img src="mitarbeiter_uebersicht.png" width="300"/>
-<img src="mitarbeiter_skils.png" width="300"/>
+<img src="service_bearbeiten.png" width="200"/>
+<img src="mitarbeiter_uebersicht.png" width="200"/>
+<img src="mitarbeiter_skils.png" width="200"/>
 </p>
 <p> 
-<img src="salon_termine.png" width="300"/>
-<img src="kalender_ansicht.png" width="300"/>
-<img src="termin_tagesuebersicht.png" width="300"/>
+<img src="salon_termine.png" width="200"/>
+<img src="kalender_ansicht.png" width="200"/>
+<img src="termin_tagesuebersicht.png" width="200"/>
 
 
 
