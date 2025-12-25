@@ -21,10 +21,10 @@ Styling4You bietet eine einheitliche Plattform, auf der Kunden Dienstleistungen 
 - **Analytics:** Einfache Auswertungen zu Buchungen und Umsatz (geplant).  
 ## Screenshots  
 Die folgenden Bilder zeigen ausgewählte Bereiche der App. Mit der HTML‑Einbettung werden die Screenshots verkleinert dargestellt, um eine bessere Übersichtlichkeit zu gewährleisten.  
-<img src="simulator_screenshot_0EE7AC43-443C-4422-8F15-ABC9B0BAE835.png" alt="Screenshot 1" width="300" />  
-<img src="simulator_screenshot_3C98232C-324B-4859-A7F8-915B569668C1.png" alt="Screenshot 2" width="300" />  
+<img src="simulator_screenshot_FF2E1B07-2F49-488C-AECD-AD718AB054BE.png" alt="Screenshot 1" width="300" />  
+<img src="simulator_screenshot_EDD041FF-235A-4B5B-B161-0BDDE7DB59BF.png" alt="Screenshot 2" width="300" />  
 <img src="simulator_screenshot_D8A8D842-E811-4282-92F0-EB11BD5E8F5B.png" alt="Screenshot 3" width="300" />  
-<img src="simulator_screenshot_EDD041FF-235A-4B5B-B161-0BDDE7DB59BF.png" alt="Screenshot 4" width="300" />  
-<img src="simulator_screenshot_FF2E1B07-2F49-488C-AECD-AD718AB054BE.png" alt="Screenshot 5" width="300" />  
+<img src="simulator_screenshot_3C98232C-324B-4859-A7F8-915B569668C1.png" alt="Screenshot 4" width="300" />  
+<img src="simulator_screenshot_0EE7AC43-443C-4422-8F15-ABC9B0BAE835.png" alt="Screenshot 5" width="300" />  
 ## Nutzung  
 Um die App zu testen, siehe die bereitgestellten Screenshots für einen ersten Eindruck. Der Quellcode bleibt privat, aber ich freue mich, über meine Arbeit und Projekte zu sprechen.
