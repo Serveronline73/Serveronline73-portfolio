@@ -32,7 +32,7 @@ Die folgenden Bilder zeigen ausgewählte Bereiche der App. Mit der HTML -Einbe
 <p>
 <img src="start_screen.png" alt="Registrierungsseite" width="300"/>
 <img src="anmelde_screen_salon_besitzer.png" alt="App-Startseite" width="300"/>
-<img src="simulator_screenshot_D8A8D842-E811-4282-92F0-EB11BD5E8F5B.png" alt="Login-Seite" width="300"/>
+<img src="register_screen_salon_besitzer.png" alt="Login-Seite" width="300"/>
 </p>
 <p>
 <img src="simulator_screenshot_3C98232C-324B-4859-A7F8-915B569668C1.png" alt="Salon-Dashboard" width="300"/>
