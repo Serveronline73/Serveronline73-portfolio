@@ -1,4 +1,4 @@
-# Dennis Durmş – Mobile App & Software Projekte  
+# Dennis Durmuş – Mobile App & Software Projekte  
 
 ## Professionelles Profil  
 Mobile App Entwickler mit Schwerpunkt **Flutter (iOS & Android)** und **Firebase**.  
