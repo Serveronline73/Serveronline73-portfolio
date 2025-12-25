@@ -56,5 +56,7 @@ Die folgenden Bilder zeigen ausgewählte Bereiche der App. Mit der HTML -Einbe
 
 
 
+
+
 Um die App zu testen, sieh dir die bereitgestellten Screenshots für einen ersten Eindruck. Der Quellcode bleibt privat, aber ich freue mich, über meine Arbeit und Projekte zu sprechen.  
 Bei Interesse können Sie mich gern über GitHub oder per E-Mail kontaktieren.  
