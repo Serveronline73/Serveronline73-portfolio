@@ -78,5 +78,5 @@ Dieses Portfolio dient als:
 ---  
 
 ## 💍 Kontakt  
-📧 E‑Mail: *deine-mail@domain.de*  
+📧 E‑Mail: dennis.durmus@hotmail.de  
 🔗 GitHub: https://github.com/Serveronline73
