@@ -36,8 +36,8 @@ Die folgenden Bilder zeigen ausgewählte Bereiche der App. Mit der HTML -Einbe
 </p>
 <p>
 <img src="dashboard_uebersicht.png" alt="Salon-Dashboard" width="300"/>
-<img src="kalender_ansicht.png" alt="Kundenansicht" width="300"/>
-<img src="kunden_code.png" alt="Feature-Details" width="300"/>
+<img src="einstellung_screen.png" alt="Kundenansicht" width="300"/>
+<img src="salon_personalisieren_screen.png" alt="Feature-Details" width="300"/>
 </p>
 <p>
 <img src="simulator_screenshot_3D791584-3FD3-40BB-88C7-1BBCA73D1CF2.png" alt="Weitere Funktionen 1" width="300"/>
