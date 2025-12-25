@@ -41,6 +41,7 @@ Die folgenden Bilder zeigen ausgewählte Bereiche der App. Mit der HTML‑Einbet
 </p>
 <p>
 <img src="simulator_screenshot_3D791584-3F3D-49E4-BCB7-1828220F0878.png" alt="Screenshot 7" width="300"/>
+<img src="simulator_screenshot_A8B3DF91-9828-4A3E-A6B4-0CBD8FEAE832.png" alt="Screenshot 8" width="300"/>
 
 
 
