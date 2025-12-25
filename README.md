@@ -3,12 +3,12 @@
 Dies ist mein persönliches Portfolio für die App Styling4You, eine Friseur-App zur Terminverwaltung und Servicebuchung.  
 ## Kernkompetenzen  
 - **Mobile-Entwicklung mit Flutter**  
-- **Saubere Architektur & modulare Code‑Strukturen**  
-- **Rollen‑ & Rechteverwaltung**  
+- **Saubere Architektur & modulare Code Strukturen**  
+- **Rollen  & Rechteverwaltung**  
 - **Nutzerzentrierte Produktentwicklung**  
 - **Praktische Problemlösung**  
 ## Beispielprojekt: Styling4You  
-Styling4You ist eine digitale Salon‑ und Terminverwaltungs‑App für Beauty‑Studios und Salons. Sie vereinfacht Buchungen, Servicekataloge und die Kundenkommunikation.  
+Styling4You ist eine digitale Salon  und Terminverwaltungs‑App für Beauty‑Studios und Salons. Sie vereinfacht Buchungen, Servicekataloge und die Kundenkommunikation.  
 ### Problem  
 Salons arbeiten häufig mit manuellen Terminbüchern und verstreuten Kommunikationskanälen. Das führt zu verpassten Buchungen, ineffizienter Planung und einer schlechten Kundenerfahrung.  
 ### Lösung  
@@ -22,8 +22,8 @@ Styling4You bietet eine einheitliche Plattform, auf der Kunden Dienstleistungen 
 ## Screenshots – Salon- & Kundenansicht  
 Die folgenden Bilder zeigen ausgewählte Bereiche der App. Mit der HTML‑Einbettung werden die Screenshots verkleinert dargestellt und nebeneinander angeordnet, um eine bessere Übersichtlichkeit zu gewährleisten.  
 <p>  
-<img src="simulator_screenshot_FF2E1B07-2F49-488C-AECD-AD718AB054BE.png" alt="App-Startseite" width="300"/>  
 <img src="simulator_screenshot_EDD041FF-235A-4B5B-B161-0BDDE7DB59BF.png" alt="Registrierungsseite" width="300"/>  
+<img src="simulator_screenshot_FF2E1B07-2F49-488C-AECD-AD718AB054BE.png" alt="App-Startseite" width="300"/>  
 <img src="simulator_screenshot_D8A8D842-E811-4282-92F0-EB11BD5E8F5B.png" alt="Login-Seite" width="300"/>  
 </p>  
 <p>  
