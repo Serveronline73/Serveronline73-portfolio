@@ -37,7 +37,7 @@ Die folgenden Bilder zeigen ausgewählte Bereiche der App. Mit der HTML -Einbe
 <p>
 <img src="simulator_screenshot_3C98232C-324B-4859-A7F8-915B569668C1.png" alt="Salon-Dashboard" width="300"/>
 <img src="kalender_ansicht.png" alt="Kundenansicht" width="300"/>
-<img src="simulator_screenshot_FA0CEF86-7FE2-44DB-8C23-1F31CFA3279B.png" alt="Feature-Details" width="300"/>
+<img src="kunden_code.png" alt="Feature-Details" width="300"/>
 </p>
 <p>
 <img src="simulator_screenshot_3D791584-3FD3-40BB-88C7-1BBCA73D1CF2.png" alt="Weitere Funktionen 1" width="300"/>
