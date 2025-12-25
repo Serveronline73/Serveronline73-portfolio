@@ -44,6 +44,7 @@ Die folgenden Bilder zeigen ausgewählte Bereiche der App. Mit der HTML -Einbe
 <img src="kunden_information_screen.png" alt="Weitere Funktionen 2" width="300"/>
 <img src="service_verwalten.png" alt="Weitere Funktionen 3" width="300"/>
 </p>
-
+<p> 
+<img src="service_bearbeiten.png" width="300"/>
 Um die App zu testen, sieh dir die bereitgestellten Screenshots für einen ersten Eindruck. Der Quellcode bleibt privat, aber ich freue mich, über meine Arbeit und Projekte zu sprechen.  
 Bei Interesse können Sie mich gern über GitHub oder per E-Mail kontaktieren.  
