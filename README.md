@@ -30,8 +30,8 @@ Styling4You bietet eine einheitliche Plattform, auf der Kunden Dienstleistungen 
 Die folgenden Bilder zeigen ausgewählte Bereiche der App. Mit der HTML -Einbettung werden die Screenshots verkleinert dargestellt und nebeneinander angeordnet, um eine bessere Übersichtlichkeit zu gewährleisten.
 
 <p>
-<img src="start_screen.png" alt="Registrierungsseite" width="300"/>
-<img src="anmelde_screen_salon_besitzer.png" alt="App-Startseite" width="300"/>
+<img src="start_screen.png" alt="Registrierungsseite" width="200"/>
+<img src="anmelde_screen_salon_besitzer.png" alt="App-Startseite" width="200"/>
 <img src="register_screen_salon_besitzer.png" alt="Login-Seite" width="300"/>
 </p>
 <p>
@@ -48,6 +48,13 @@ Die folgenden Bilder zeigen ausgewählte Bereiche der App. Mit der HTML -Einbe
 <img src="service_bearbeiten.png" width="300"/>
 <img src="mitarbeiter_uebersicht.png" width="300"/>
 <img src="mitarbeiter_skils.png" width="300"/>
+</p>
+<p> 
+<img src="salon_termine.png" width="300"/>
+<img src="kalender_ansicht.png" width="300"/>
+<img src="termin_tagesuebersicht.png" width="300"/>
+
+
 
 Um die App zu testen, sieh dir die bereitgestellten Screenshots für einen ersten Eindruck. Der Quellcode bleibt privat, aber ich freue mich, über meine Arbeit und Projekte zu sprechen.  
 Bei Interesse können Sie mich gern über GitHub oder per E-Mail kontaktieren.  
