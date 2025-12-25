@@ -40,9 +40,9 @@ Die folgenden Bilder zeigen ausgewählte Bereiche der App. Mit der HTML -Einbe
 <img src="salon_personalisieren_screen.png" alt="Feature-Details" width="300"/>
 </p>
 <p>
-<img src="simulator_screenshot_3D791584-3FD3-40BB-88C7-1BBCA73D1CF2.png" alt="Weitere Funktionen 1" width="300"/>
-<img src="simulator_screenshot_AB3071F8-60BF-4B65-88CA-1BDB91331E87.png" alt="Weitere Funktionen 2" width="300"/>
-<img src="simulator_screenshot_1BD2D592-69F8-4BE0-BA58-7C0AF15E1940.png" alt="Weitere Funktionen 3" width="300"/>
+<img src="oeffnungszeiten_screen.png" alt="Weitere Funktionen 1" width="300"/>
+<img src="kunden_information_screen.png" alt="Weitere Funktionen 2" width="300"/>
+<img src="service_verwalten.png" alt="Weitere Funktionen 3" width="300"/>
 </p>
 
 Um die App zu testen, sieh dir die bereitgestellten Screenshots für einen ersten Eindruck. Der Quellcode bleibt privat, aber ich freue mich, über meine Arbeit und Projekte zu sprechen.  
