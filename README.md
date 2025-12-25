@@ -53,7 +53,7 @@ Die folgenden Bilder zeigen ausgewählte Bereiche der App. Mit der HTML -Einbe
 <img src="salon_termine.png" width="200"/>
 <img src="kalender_ansicht.png" width="200"/>
 <img src="termin_tagesuebersicht.png" width="200"/>
-
+<p> 
 
 
 
