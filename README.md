@@ -35,7 +35,7 @@ Die folgenden Bilder zeigen ausgewählte Bereiche der App. Mit der HTML -Einbe
 <img src="register_screen_salon_besitzer.png" alt="Login-Seite" width="300"/>
 </p>
 <p>
-<img src="simulator_screenshot_3C98232C-324B-4859-A7F8-915B569668C1.png" alt="Salon-Dashboard" width="300"/>
+<img src="dashboard_uebersicht.png" alt="Salon-Dashboard" width="300"/>
 <img src="kalender_ansicht.png" alt="Kundenansicht" width="300"/>
 <img src="kunden_code.png" alt="Feature-Details" width="300"/>
 </p>
