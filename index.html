@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Styling4You – Portfolio | Dennis Durmus</title>
-  <meta name="description" content="Portfolio: Styling4You – Flutter + Firebase App für Terminbuchung, Serviceverwaltung und Kundenkommunikation (Realtime)." />
+  <title>Portfolio | Dennis Durmus</title>
+  <meta name="description" content="Portfolio von Dennis Durmus: Flutter + Firebase Apps (Styling4You, Zeta Park) mit Realtime, Rollen & Push." />
   <style>
     :root{
       --bg0:#070b14;
@@ -30,7 +30,6 @@
         linear-gradient(180deg, var(--bg0), var(--bg1));
       min-height:100vh;
     }
-    /* leichte Körnung (ohne externe Datei) */
     body::before{
       content:"";
       position:fixed; inset:0;
@@ -50,7 +49,6 @@
       -webkit-backdrop-filter: blur(10px);
     }
 
-    /* Top Nav (polierter Look wie im Mockup) */
     .topbar{
       position:sticky; top:0; z-index:10;
       margin:10px 0 18px;
@@ -84,7 +82,7 @@
     header.hero{padding:26px 18px 18px}
     h1{margin:0 0 8px;font-size:34px}
     .role{margin:0 0 10px;color:var(--mut)}
-    .lead{margin:0;color:var(--mut);line-height:1.65;max-width:82ch}
+    .lead{margin:0;color:var(--mut);line-height:1.65;max-width:90ch}
     .chips{margin-top:12px; display:flex; flex-wrap:wrap; gap:8px}
     .chip{
       font-size:12px; color:var(--mut);
@@ -96,21 +94,10 @@
     section{padding:26px 0}
     .section-title{display:flex; align-items:flex-end; justify-content:space-between; gap:10px; margin:0 0 12px}
     h2{margin:0;font-size:22px}
+    h3{margin:0 0 6px;font-size:16px}
     .hint{color:var(--mut); font-size:13px}
 
     p{margin:0 0 10px;color:var(--mut);line-height:1.65}
-    .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
-    .card{padding:14px}
-    .tag{
-      display:inline-flex; align-items:center; gap:6px;
-      font-size:12px;
-      color:#071023;
-      background:rgba(79,140,255,.95);
-      padding:4px 10px;
-      border-radius:999px;
-      margin-bottom:10px;
-      font-weight:700;
-    }
     ul{margin:10px 0 0 18px;color:var(--mut);line-height:1.6}
 
     .kpi{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}
@@ -118,7 +105,25 @@
     .kpi strong{display:block;font-size:13px;color:var(--txt)}
     .kpi span{display:block;margin-top:6px;color:var(--mut);font-size:13px}
 
-    /* Screenshot-Galerie wie im Mockup: “Karten” + Hover + saubere Größen */
+    /* Projekte-Grid */
+    .projects{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+    .project-card{padding:14px}
+    .project-card p{margin:0;color:var(--mut)}
+    .project-card .meta{margin-top:10px; display:flex; flex-wrap:wrap; gap:8px}
+    .pill{
+      font-size:12px;
+      color:var(--txt);
+      padding:5px 10px;
+      border-radius:999px;
+      border:1px solid rgba(255,255,255,.10);
+      background:rgba(255,255,255,.05);
+    }
+    .project-card a{color:inherit; text-decoration:none}
+    .project-card:hover{border-color:rgba(79,140,255,.25)}
+    .project-card.glass{transition:transform .15s ease, border-color .15s ease}
+    .project-card.glass:hover{transform:translateY(-2px)}
+
+    /* Screenshots */
     .shots{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}
     figure.shot{
       margin:0;
@@ -136,7 +141,7 @@
     .shot img{
       width:100%;
       height:100%;
-      object-fit:cover; /* wirkt “cleaner” */
+      object-fit:cover;
       display:block;
       filter: contrast(1.02) saturate(1.02);
     }
@@ -151,8 +156,8 @@
     footer{padding:18px 0;color:var(--mut);border-top:1px solid rgba(255,255,255,.08); margin-top:10px}
 
     @media (max-width:980px){
-      .grid{grid-template-columns:1fr}
       .kpi{grid-template-columns:1fr 1fr}
+      .projects{grid-template-columns:1fr}
       .shots{grid-template-columns:1fr 1fr}
       header.hero{padding:22px 14px 14px}
     }
@@ -173,20 +178,20 @@
           <span>Junior Mobile Developer · Flutter · Firebase</span>
         </div>
         <nav class="nav">
-          <a class="btn primary" href="#projekt">Projekt</a>
-          <a class="btn" href="#screens">Screenshots</a>
+          <a class="btn primary" href="#projects">Projekte</a>
+          <a class="btn" href="#styling4you">Styling4You</a>
+          <a class="btn" href="#zetapark">Zeta Park</a>
           <a class="btn" href="#kontakt">Kontakt</a>
         </nav>
       </div>
     </div>
 
     <header class="hero glass">
-      <h1>Styling4You</h1>
-      <p class="role">Salon- & Termin-App · Realtime Daten · Clean UI</p>
+      <h1>Portfolio</h1>
+      <p class="role">Flutter Apps · Firebase Backend · Realtime · Rollen · Push</p>
       <p class="lead">
-        Eine zentrale App für Buchungen, Serviceverwaltung, Salon-Infos und Galerie.
-        <strong>Realtime-Synchronisierung</strong> sorgt dafür, dass Kunden Änderungen sofort sehen
-        (Öffnungszeiten, Services, Kundendaten, Bilder).
+        Fokus auf produktionsnahe Mobile-Apps mit sauberer UI, stabilen Datenmodellen und klaren User-Flows.
+        Unten findest du zwei Projekte: <strong>Styling4You</strong> (Salon- & Terminverwaltung) und <strong>Zeta Park</strong> (Finanzen/Verwaltung für Communities).
       </p>
       <div class="chips">
         <span class="chip">Flutter</span>
@@ -194,13 +199,55 @@
         <span class="chip">Firestore (Realtime)</span>
         <span class="chip">Storage</span>
         <span class="chip">Security Rules</span>
+        <span class="chip">Push (OneSignal)</span>
       </div>
     </header>
 
-    <section id="projekt">
+    <!-- PROJEKTE GRID -->
+    <section id="projects">
       <div class="section-title">
-        <h2>Projekt-Überblick</h2>
-        <span class="hint">Kurz, klar, bewerbungsstark</span>
+        <h2>Projekte</h2>
+        <span class="hint">Kurze Übersicht · Klick führt zur Case-Study</span>
+      </div>
+
+      <div class="projects">
+        <div class="project-card glass">
+          <a href="#styling4you">
+            <h3>Styling4You</h3>
+            <p>Salon- & Termin-App: Services, Personal, Buchung, News & Galerie – mit Realtime-Sync.</p>
+            <div class="meta">
+              <span class="pill">Flutter</span><span class="pill">Firebase</span><span class="pill">Realtime</span>
+            </div>
+          </a>
+        </div>
+
+        <div class="project-card glass">
+          <a href="#zetapark">
+            <h3>Zeta Park</h3>
+            <p>Community/Objekt-Management: Zahlungen, Ausgaben, Charts, PDFs & Push-Erinnerungen (Admin/Nutzer).</p>
+            <div class="meta">
+              <span class="pill">Flutter</span><span class="pill">Firebase</span><span class="pill">Admin Panel</span>
+            </div>
+          </a>
+        </div>
+
+        <div class="project-card glass">
+          <a href="#kontakt">
+            <h3>Weitere Projekte</h3>
+            <p>Auf Anfrage: kleinere Demos, UI-Experimente, Integrationen und Prototypen.</p>
+            <div class="meta">
+              <span class="pill">UI/UX</span><span class="pill">Prototyping</span><span class="pill">Mobile</span>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- STYLING4YOU -->
+    <section id="styling4you">
+      <div class="section-title">
+        <h2>Styling4You</h2>
+        <span class="hint">Case Study</span>
       </div>
 
       <div class="kpi">
@@ -212,28 +259,28 @@
 
       <div style="height:12px"></div>
 
-      <div class="grid">
-        <div class="card glass">
-          <div class="tag">Problem</div>
-          <p>Manuelle Terminverwaltung und verstreute Kommunikation führen zu Chaos, Doppelbuchungen und unnötigem Aufwand.</p>
+      <div class="projects" style="grid-template-columns:repeat(3,1fr)">
+        <div class="project-card glass">
+          <h3>Problem</h3>
+          <p>Manuelle Terminverwaltung und verstreute Kommunikation führen zu Doppelbuchungen und hohem Aufwand.</p>
         </div>
 
-        <div class="card glass">
-          <div class="tag">Lösung</div>
-          <p>Eine zentrale App für Termine, Services, Salonprofil, Galerie und Kundeninfos – mobil, übersichtlich und schnell.</p>
+        <div class="project-card glass">
+          <h3>Lösung</h3>
+          <p>Zentrale App für Termine, Services, Salonprofil, Galerie und Kundeninfos – mobil und übersichtlich.</p>
         </div>
 
-        <div class="card glass">
-          <div class="tag">Realtime-Fokus</div>
-          <p>Änderungen durch Salon-Benutzer werden sofort synchronisiert, damit Kunden immer den aktuellen Stand sehen.</p>
+        <div class="project-card glass">
+          <h3>Technik-Fokus</h3>
+          <p>Firestore Streams für Realtime-UI, E-Mail Login, Storage für Medien und rollenbasierte Security Rules.</p>
         </div>
       </div>
 
       <div style="height:12px"></div>
 
-      <div class="grid">
-        <div class="card glass">
-          <div class="tag">Hauptfunktionen</div>
+      <div class="projects" style="grid-template-columns:repeat(3,1fr)">
+        <div class="project-card glass">
+          <h3>Hauptfunktionen</h3>
           <ul>
             <li>Servicekatalog & Kategorien</li>
             <li>Terminbuchung (Verfügbarkeit/Slots)</li>
@@ -242,115 +289,122 @@
           </ul>
         </div>
 
-        <div class="card glass">
-          <div class="tag">Technik</div>
+        <div class="project-card glass">
+          <h3>Relevanz</h3>
           <ul>
-            <li>Firestore Streams für Realtime-UI</li>
-            <li>E-Mail Login mit Firebase Auth</li>
-            <li>Storage für Bilder/Logos</li>
-            <li>Security Rules nach Rolle</li>
+            <li>Modulare UI-Komponenten</li>
+            <li>Multi-User Datenmodell</li>
+            <li>Saubere Auth/Onboarding-Flows</li>
           </ul>
         </div>
 
-        <div class="card glass">
-          <div class="tag">Warum relevant</div>
+        <div class="project-card glass">
+          <h3>Stack</h3>
           <ul>
-            <li>Saubere UI-Komponenten & Struktur</li>
-            <li>Datenmodell für Multi-User-Flows</li>
-            <li>UX für Auth/Onboarding & Edge-Cases</li>
+            <li>Flutter</li>
+            <li>Firebase Auth / Firestore / Storage</li>
+            <li>Security Rules</li>
           </ul>
         </div>
       </div>
-    </section>
 
-    <section id="screens">
+      <div style="height:12px"></div>
+
       <div class="section-title">
-        <h2>Screenshots</h2>
-        <span class="hint">Karten-Layout, wie im Mockup</span>
+        <h2>Styling4You – Screenshots</h2>
+        <span class="hint">Pfad: assets/projects/styling4you/</span>
       </div>
-      <p>Wenn ein Bild nicht angezeigt wird: Dateiname exakt prüfen (Groß-/Kleinschreibung).</p>
 
       <div class="shots">
         <figure class="shot">
-          <div class="imgwrap"><img src="start_screen.png" alt="Startscreen" /></div>
-          <figcaption>Start – Rollenwahl (Salon/Kunde)</figcaption>
+          <div class="imgwrap"><img src="assets/projects/styling4you/01.png" alt="Styling4You Screenshot 1" /></div>
+          <figcaption>Start / Rollenwahl</figcaption>
+        </figure>
+        <figure class="shot">
+          <div class="imgwrap"><img src="assets/projects/styling4you/02.png" alt="Styling4You Screenshot 2" /></div>
+          <figcaption>Login / Onboarding</figcaption>
+        </figure>
+        <figure class="shot">
+          <div class="imgwrap"><img src="assets/projects/styling4you/03.png" alt="Styling4You Screenshot 3" /></div>
+          <figcaption>Dashboard</figcaption>
+        </figure>
+        <figure class="shot">
+          <div class="imgwrap"><img src="assets/projects/styling4you/04.png" alt="Styling4You Screenshot 4" /></div>
+          <figcaption>Terminverwaltung</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- ZETA PARK -->
+    <section id="zetapark">
+      <div class="section-title">
+        <h2>Zeta Park</h2>
+        <span class="hint">Case Study</span>
+      </div>
+
+      <div class="kpi">
+        <div class="card glass"><strong>Stack</strong><span>Flutter · Firebase · (Push/Notifications)</span></div>
+        <div class="card glass"><strong>Rollen</strong><span>Admin Panel · Nutzer/Haushalt</span></div>
+        <div class="card glass"><strong>Finanzen</strong><span>Einnahmen/Ausgaben · Perioden · Auswertungen</span></div>
+        <div class="card glass"><strong>UX</strong><span>Klare KPI-Karten + Charts</span></div>
+      </div>
+
+      <div style="height:12px"></div>
+
+      <div class="projects" style="grid-template-columns:repeat(3,1fr)">
+        <div class="project-card glass">
+          <h3>Problem</h3>
+          <p>Zahlungen, Dokumente und Erinnerungen sind oft verteilt (Papier/WhatsApp) und schwer nachzuvollziehen.</p>
+        </div>
+
+        <div class="project-card glass">
+          <h3>Lösung</h3>
+          <p>App für Verwaltung: Zahlungseingänge, offene Posten, Ausgaben, Auswertungen und Admin-Funktionen.</p>
+        </div>
+
+        <div class="project-card glass">
+          <h3>Highlights</h3>
+          <ul>
+            <li>Admin Panel (Benachrichtigungen, Zahlungen)</li>
+            <li>Bilanz & Charts</li>
+            <li>Monatsübersicht / Reports</li>
+            <li>Offene Zahlungen / Erinnerungen</li>
+          </ul>
+        </div>
+      </div>
+
+      <div style="height:12px"></div>
+
+      <div class="section-title">
+        <h2>Zeta Park – Screenshots</h2>
+        <span class="hint">Pfad: assets/projects/zetapark/</span>
+      </div>
+
+      <div class="shots">
+        <figure class="shot">
+          <div class="imgwrap"><img src="assets/projects/zetapark/01.png" alt="Zeta Park Screenshot 1" /></div>
+          <figcaption>Start / Zeta Park Übersicht</figcaption>
         </figure>
 
         <figure class="shot">
-          <div class="imgwrap"><img src="anmelde_screen_salon_besitzer.png" alt="Salon Login" /></div>
-          <figcaption>Salon-Besitzer – Login</figcaption>
+          <div class="imgwrap"><img src="assets/projects/zetapark/02.png" alt="Zeta Park Screenshot 2" /></div>
+          <figcaption>Bilanz – Einnahmen vs Ausgaben</figcaption>
         </figure>
 
         <figure class="shot">
-          <div class="imgwrap"><img src="register_screen_salon_besitzer.png" alt="Salon Registrierung" /></div>
-          <figcaption>Salon Registrierung – Geschäftstyp</figcaption>
+          <div class="imgwrap"><img src="assets/projects/zetapark/03.png" alt="Zeta Park Screenshot 3" /></div>
+          <figcaption>Admin Panel – Funktionen</figcaption>
         </figure>
 
         <figure class="shot">
-          <div class="imgwrap"><img src="dashboard_uebersicht.png" alt="Dashboard Übersicht" /></div>
-          <figcaption>Dashboard – Schnellzugriff</figcaption>
+          <div class="imgwrap"><img src="assets/projects/zetapark/04.png" alt="Zeta Park Screenshot 4" /></div>
+          <figcaption>Monatsstatus – Mali Durum</figcaption>
         </figure>
 
         <figure class="shot">
-          <div class="imgwrap"><img src="einstellung_screen.png" alt="Einstellungen" /></div>
-          <figcaption>Einstellungen – Verwaltung</figcaption>
+          <div class="imgwrap"><img src="assets/projects/zetapark/05.png" alt="Zeta Park Screenshot 5" /></div>
+          <figcaption>Kategorien + Trend</figcaption>
         </figure>
-
-        <figure class="shot">
-          <div class="imgwrap"><img src="salon_personalisieren_screen.png" alt="Salon personalisieren" /></div>
-          <figcaption>Salon personalisieren – Logo/Infos</figcaption>
-        </figure>
-
-        <figure class="shot">
-          <div class="imgwrap"><img src="oeffnungszeiten_screen.png" alt="Öffnungszeiten" /></div>
-          <figcaption>Öffnungszeiten – pro Wochentag</figcaption>
-        </figure>
-
-        <figure class="shot">
-          <div class="imgwrap"><img src="kunde_hauptansicht1.png" alt="Kundenansicht Hauptansicht 1" /></div>
-          <figcaption>Kundenansicht – Hauptansicht</figcaption>
-        </figure>
-
-        <figure class="shot">
-          <div class="imgwrap"><img src="kunde_hauptansicht2.png" alt="Kundenansicht Hauptansicht 2" /></div>
-          <figcaption>Kundenansicht – Navigation/Übersicht</figcaption>
-        </figure>
-
-        <figure class="shot">
-          <div class="imgwrap"><img src="kunde_darkmode1.png" alt="Kundenansicht Dark Mode 1" /></div>
-          <figcaption>Dark Mode – Kundenansicht</figcaption>
-        </figure>
-
-        <figure class="shot">
-          <div class="imgwrap"><img src="kunde_darkmode2.png" alt="Kundenansicht Dark Mode 2" /></div>
-          <figcaption>Dark Mode – Detailansicht</figcaption>
-        </figure>
-
-        <figure class="shot">
-          <div class="imgwrap"><img src="termin1.png" alt="Terminansicht 1" /></div>
-          <figcaption>Termine – Übersicht</figcaption>
-        </figure>
-
-        <figure class="shot">
-           <div class="imgwrap"><img src="termin2.png" alt="Terminansicht 2" /></div>
-           <figcaption>Terminbuchung – Datum & Uhrzeit</figcaption>
-        </figure>
-
-        <figure class="shot">
-           <div class="imgwrap"><img src="termin3.png" alt="Terminansicht 3" /></div>
-           <figcaption>Service-Auswahl</figcaption>
-        </figure>
-
-        <figure class="shot">
-           <div class="imgwrap"><img src="termin4.png" alt="Terminansicht 4" /></div>
-           <figcaption>Mitarbeiter-Auswahl</figcaption>
-        </figure>
-
-        <figure class="shot">
-           <div class="imgwrap"><img src="termin5.png" alt="Terminansicht 5" /></div>
-           <figcaption>Buchung – Bestätigung</figcaption>
-        </figure>
-
       </div>
     </section>
 
@@ -359,15 +413,15 @@
         <h2>Kontakt</h2>
         <span class="hint">Schnell erreichbar</span>
       </div>
-      <div class="card glass">
-        <p><strong>E-Mail:</strong> <a href="mailto:dennis.durmus@hotmail.de">dennis.durmus@hotmail.de</a></p>
-        <p><strong>GitHub:</strong> <a href="https://github.com/Serveronline73">github.com/Serveronline73</a></p>
+      <div class="project-card glass">
+        <p><strong>E-Mail:</strong> <a href="mailto:dennis.durmus@hotmail.de" style="color:var(--txt)">dennis.durmus@hotmail.de</a></p>
+        <p><strong>GitHub:</strong> <a href="https://github.com/Serveronline73" style="color:var(--txt)">github.com/Serveronline73</a></p>
         <p><strong>Profil:</strong> Junior Mobile Developer · Flutter · Firebase · Realtime Apps</p>
       </div>
     </section>
 
     <footer>
-      © <span id="y"></span> Dennis Durmus · Styling4You Portfolio
+      © <span id="y"></span> Dennis Durmus · Portfolio
     </footer>
 
   </div>
