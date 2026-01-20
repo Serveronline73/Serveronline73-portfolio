@@ -4,8 +4,7 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Portfolio | Dennis Durmus</title>
-  <meta name="description" content="Portfolio von Dennis Durmus: Flutter + Firebase Apps (Styling4You, Zeta Park) mit Realtime, Rollen & Push." />
-
+  <meta name="description" content="Portfolio von Dennis Durmus: Flutter & Firebase Projekte (Realtime Apps): Styling4You, Zeta Park, Halva App (Helvaci Ali Bochum)." />
   <style>
     :root{
       --bg0:#070b14;
@@ -40,7 +39,6 @@
       background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='180' height='180'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='180' height='180' filter='url(%23n)' opacity='.55'/%3E%3C/svg%3E");
     }
 
-    a{color:var(--txt)}
     .wrap{max-width:1120px;margin:0 auto;padding:28px 18px 44px}
     .glass{
       background:var(--card);
@@ -56,9 +54,7 @@
       margin:10px 0 18px;
       padding:10px 12px;
     }
-    .topbar-inner{
-      display:flex; align-items:center; justify-content:space-between; gap:10px;
-    }
+    .topbar-inner{display:flex; align-items:center; justify-content:space-between; gap:10px;}
     .brand{display:flex; flex-direction:column; gap:2px}
     .brand strong{font-size:14px; letter-spacing:.2px}
     .brand span{font-size:12px; color:var(--mut)}
@@ -73,12 +69,13 @@
       font-size:13px;
       transition:transform .15s ease, background .15s ease, border-color .15s ease;
       user-select:none;
+      white-space:nowrap;
     }
     .btn:hover{transform:translateY(-1px); background:rgba(255,255,255,.09); border-color:rgba(255,255,255,.16)}
     .btn.primary{
       background:linear-gradient(180deg, rgba(79,140,255,1), rgba(79,140,255,.78));
       border-color:transparent;
-      color:#071023; font-weight:700;
+      color:#071023; font-weight:800;
     }
 
     header.hero{padding:26px 18px 18px}
@@ -94,38 +91,46 @@
     }
 
     section{padding:26px 0}
-    .section-title{
-      display:flex; align-items:flex-end; justify-content:space-between; gap:10px;
-      margin:0 0 12px
-    }
+    .section-title{display:flex; align-items:flex-end; justify-content:space-between; gap:10px; margin:0 0 12px}
     h2{margin:0;font-size:22px}
-    h3{margin:0 0 6px;font-size:16px}
-    p{margin:0 0 10px;color:var(--mut);line-height:1.65}
-    ul{margin:10px 0 0 18px;color:var(--mut);line-height:1.6}
     .hint{color:var(--mut); font-size:13px}
+    p{margin:0 0 10px;color:var(--mut);line-height:1.65}
 
     .kpi{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}
     .kpi .card{padding:12px}
     .kpi strong{display:block;font-size:13px;color:var(--txt)}
     .kpi span{display:block;margin-top:6px;color:var(--mut);font-size:13px}
 
+    .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+    .card{padding:14px}
+    .tag{
+      display:inline-flex; align-items:center; gap:6px;
+      font-size:12px;
+      color:#071023;
+      background:rgba(79,140,255,.95);
+      padding:4px 10px;
+      border-radius:999px;
+      margin-bottom:10px;
+      font-weight:800;
+    }
+    ul{margin:10px 0 0 18px;color:var(--mut);line-height:1.6}
+
     .projects{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
     .project-card{padding:14px}
-    .project-card p{margin:0;color:var(--mut)}
-    .project-card a{color:inherit;text-decoration:none;display:block}
-    .project-card.glass{transition:transform .15s ease, border-color .15s ease}
-    .project-card.glass:hover{transform:translateY(-2px); border-color:rgba(79,140,255,.25)}
+    .project-card a{color:inherit; text-decoration:none; display:block}
+    .project-card h3{margin:0 0 8px; font-size:16px}
+    .project-card p{margin:0; color:var(--mut)}
     .meta{margin-top:10px; display:flex; flex-wrap:wrap; gap:8px}
     .pill{
       font-size:12px;
-      color:var(--txt);
-      padding:5px 10px;
+      color:var(--mut);
+      padding:6px 10px;
       border-radius:999px;
       border:1px solid rgba(255,255,255,.10);
       background:rgba(255,255,255,.05);
     }
 
-    .shots{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}
+    .shots{display:grid;grid-template-columns:repeat(5,1fr);gap:12px}
     figure.shot{
       margin:0;
       overflow:hidden;
@@ -135,17 +140,8 @@
       transition: transform .18s ease, border-color .18s ease;
     }
     figure.shot:hover{transform:translateY(-2px); border-color:rgba(79,140,255,.35)}
-    .shot .imgwrap{
-      aspect-ratio: 9 / 19.5;
-      background:rgba(0,0,0,.2);
-    }
-    .shot img{
-      width:100%;
-      height:100%;
-      object-fit:cover;
-      display:block;
-      filter: contrast(1.02) saturate(1.02);
-    }
+    .shot .imgwrap{aspect-ratio: 9 / 19.5; background:rgba(0,0,0,.2)}
+    .shot img{width:100%; height:100%; object-fit:cover; display:block; filter: contrast(1.02) saturate(1.02)}
     .shot figcaption{
       padding:10px 10px 12px;
       font-size:13px;
@@ -156,9 +152,13 @@
 
     footer{padding:18px 0;color:var(--mut);border-top:1px solid rgba(255,255,255,.08); margin-top:10px}
 
+    @media (max-width:1100px){
+      .shots{grid-template-columns:repeat(3,1fr)}
+    }
     @media (max-width:980px){
-      .kpi{grid-template-columns:1fr 1fr}
+      .grid{grid-template-columns:1fr}
       .projects{grid-template-columns:1fr}
+      .kpi{grid-template-columns:1fr 1fr}
       .shots{grid-template-columns:1fr 1fr}
       header.hero{padding:22px 14px 14px}
     }
@@ -182,6 +182,7 @@
           <a class="btn primary" href="#projects">Projekte</a>
           <a class="btn" href="#styling4you">Styling4You</a>
           <a class="btn" href="#zetapark">Zeta Park</a>
+          <a class="btn" href="#halva">Halva App</a>
           <a class="btn" href="#kontakt">Kontakt</a>
         </nav>
       </div>
@@ -189,10 +190,10 @@
 
     <header class="hero glass">
       <h1>Portfolio</h1>
-      <p class="role">Flutter Apps · Firebase Backend · Realtime · Rollen · Push</p>
+      <p class="role">Flutter · Firebase · Realtime Apps</p>
       <p class="lead">
-        Fokus auf produktionsnahe Mobile-Apps mit sauberer UI, stabilen Datenmodellen und klaren User-Flows.
-        Unten findest du zwei Projekte: <strong>Styling4You</strong> (Salon- & Terminverwaltung) und <strong>Zeta Park</strong> (Finanzen/Verwaltung für Communities).
+        Fokus auf <strong>saubere UI</strong>, klare Datenmodelle und <strong>Realtime-Synchronisierung</strong>.
+        Hier sind meine aktuellen Projekte: Styling4You (Salon & Termine), Zeta Park (Site-/Finanzverwaltung) und die Halva App (Helvaci Ali Bochum).
       </p>
       <div class="chips">
         <span class="chip">Flutter</span>
@@ -200,22 +201,21 @@
         <span class="chip">Firestore (Realtime)</span>
         <span class="chip">Storage</span>
         <span class="chip">Security Rules</span>
-        <span class="chip">Push (OneSignal)</span>
       </div>
     </header>
 
-    <!-- PROJEKTE -->
+    <!-- Projekte Übersicht -->
     <section id="projects">
       <div class="section-title">
         <h2>Projekte</h2>
-        <span class="hint">Kurze Übersicht · Klick führt zur Case-Study</span>
+        <span class="hint">Kurzübersicht</span>
       </div>
 
       <div class="projects">
         <div class="project-card glass">
           <a href="#styling4you">
             <h3>Styling4You</h3>
-            <p>Salon- & Termin-App: Services, Personal, Buchung, News & Galerie – mit Realtime-Sync.</p>
+            <p>Salon- & Termin-App mit Rollen, Servicekatalog und Realtime-Updates.</p>
             <div class="meta">
               <span class="pill">Flutter</span><span class="pill">Firebase</span><span class="pill">Realtime</span>
             </div>
@@ -225,86 +225,85 @@
         <div class="project-card glass">
           <a href="#zetapark">
             <h3>Zeta Park</h3>
-            <p>Community/Objekt-Management: Zahlungen, Ausgaben, Charts, PDFs & Erinnerungen (Admin/Nutzer).</p>
+            <p>Verwaltungs-App für Einnahmen/Ausgaben, Reports und Admin-Workflows.</p>
             <div class="meta">
-              <span class="pill">Flutter</span><span class="pill">Firebase</span><span class="pill">Admin Panel</span>
+              <span class="pill">Flutter</span><span class="pill">Charts</span><span class="pill">Admin Panel</span>
             </div>
           </a>
         </div>
 
         <div class="project-card glass">
-          <a href="#kontakt">
-            <h3>Weitere Projekte</h3>
-            <p>Auf Anfrage: kleinere Demos, UI-Experimente, Integrationen und Prototypen.</p>
+          <a href="#halva">
+            <h3>Halva App (Helvaci Ali Bochum)</h3>
+            <p>Menü, Produktdetails, Aktionen & Galerie – Angebotsänderungen erscheinen in Realtime.</p>
             <div class="meta">
-              <span class="pill">UI/UX</span><span class="pill">Prototyping</span><span class="pill">Mobile</span>
+              <span class="pill">Flutter</span><span class="pill">Realtime</span><span class="pill">Hidden Admin</span>
             </div>
           </a>
         </div>
       </div>
     </section>
 
-    <!-- STYLING4YOU -->
+    <!-- Styling4You -->
     <section id="styling4you">
       <div class="section-title">
         <h2>Styling4You</h2>
-        <span class="hint">Case Study</span>
+        <span class="hint">Salon- & Termin-App · Realtime Daten · Clean UI</span>
       </div>
 
       <div class="kpi">
         <div class="card glass"><strong>Stack</strong><span>Flutter · Firebase (Auth/Firestore/Storage)</span></div>
         <div class="card glass"><strong>Rollen</strong><span>Salon-Besitzer · Mitarbeiter · Kunde</span></div>
         <div class="card glass"><strong>Realtime</strong><span>Änderungen sofort sichtbar</span></div>
-        <div class="card glass"><strong>Status</strong><span>Release-Vorbereitung</span></div>
+        <div class="card glass"><strong>Status</strong><span>Portfolio / Release-Vorbereitung</span></div>
       </div>
 
       <div style="height:12px"></div>
 
-      <div class="projects">
-        <div class="project-card glass">
-          <h3>Problem</h3>
-          <p>Manuelle Terminverwaltung und verstreute Kommunikation führen zu Doppelbuchungen und hohem Aufwand.</p>
+      <div class="grid">
+        <div class="card glass">
+          <div class="tag">Problem</div>
+          <p>Manuelle Terminverwaltung und verstreute Kommunikation führen zu Doppelbuchungen und unnötigem Aufwand.</p>
         </div>
-
-        <div class="project-card glass">
-          <h3>Lösung</h3>
-          <p>Zentrale App für Termine, Services, Salonprofil, Galerie und Kundeninfos – mobil und übersichtlich.</p>
+        <div class="card glass">
+          <div class="tag">Lösung</div>
+          <p>Eine zentrale App für Termine, Services, Salonprofil und Kundeninfos – mobil, übersichtlich, schnell.</p>
         </div>
-
-        <div class="project-card glass">
-          <h3>Technik-Fokus</h3>
-          <p>Firestore Streams für Realtime-UI, E-Mail Login, Storage für Medien und rollenbasierte Security Rules.</p>
+        <div class="card glass">
+          <div class="tag">Realtime-Fokus</div>
+          <p>Änderungen durch Salon-Benutzer werden sofort synchronisiert, damit Kunden immer den aktuellen Stand sehen.</p>
         </div>
       </div>
 
       <div style="height:12px"></div>
 
-      <div class="projects">
-        <div class="project-card glass">
-          <h3>Hauptfunktionen</h3>
+      <div class="grid">
+        <div class="card glass">
+          <div class="tag">Hauptfunktionen</div>
           <ul>
             <li>Servicekatalog & Kategorien</li>
-            <li>Terminbuchung (Verfügbarkeit/Slots)</li>
+            <li>Terminbuchung (Slots/Verfügbarkeit)</li>
             <li>Rollen & Rechte</li>
             <li>Galerie & Salon-Infos</li>
           </ul>
         </div>
 
-        <div class="project-card glass">
-          <h3>Relevanz</h3>
+        <div class="card glass">
+          <div class="tag">Technik</div>
           <ul>
-            <li>Modulare UI-Komponenten</li>
-            <li>Multi-User Datenmodell</li>
-            <li>Saubere Auth/Onboarding-Flows</li>
+            <li>Firestore Streams für Realtime-UI</li>
+            <li>E-Mail Login (Firebase Auth)</li>
+            <li>Storage für Bilder/Logos</li>
+            <li>Security Rules nach Rolle</li>
           </ul>
         </div>
 
-        <div class="project-card glass">
-          <h3>Stack</h3>
+        <div class="card glass">
+          <div class="tag">Warum relevant</div>
           <ul>
-            <li>Flutter</li>
-            <li>Firebase Auth / Firestore / Storage</li>
-            <li>Security Rules</li>
+            <li>Saubere UI-Komponenten & Struktur</li>
+            <li>Datenmodell für Multi-User-Flows</li>
+            <li>UX für Auth/Onboarding & Edge-Cases</li>
           </ul>
         </div>
       </div>
@@ -313,71 +312,60 @@
 
       <div class="section-title">
         <h2>Styling4You – Screenshots</h2>
-        <span class="hint">Aktuell: Dateinamen wie im Repo (Root oder assets/screens – bei Bedarf Pfad ergänzen)</span>
+        <span class="hint">Dateien liegen im Root neben index.html</span>
       </div>
 
-      <!-- WICHTIG:
-           Wenn deine Bilder in assets/screens/ liegen, ergänze bei jedem src vorne: assets/screens/
-           Beispiel: src="assets/screens/start_screen.png"
-      -->
       <div class="shots">
         <figure class="shot">
-          <div class="imgwrap"><img src="start_screen.png" alt="Startscreen" /></div>
-          <figcaption>Start – Rollenwahl (Salon/Kunde)</figcaption>
+          <div class="imgwrap"><img src="start_screen.png" alt="Styling4You Startscreen" /></div>
+          <figcaption>Start – Rollenwahl</figcaption>
         </figure>
 
         <figure class="shot">
-          <div class="imgwrap"><img src="anmelde_screen_salon_besitzer.png" alt="Salon Login" /></div>
-          <figcaption>Salon-Besitzer – Login</figcaption>
+          <div class="imgwrap"><img src="anmelde_screen_salon_besitzer.png" alt="Styling4You Login" /></div>
+          <figcaption>Login – Salon-Besitzer</figcaption>
         </figure>
 
         <figure class="shot">
-          <div class="imgwrap"><img src="register_screen_salon_besitzer.png" alt="Salon Registrierung" /></div>
-          <figcaption>Salon Registrierung – Geschäftstyp</figcaption>
+          <div class="imgwrap"><img src="register_screen_salon_besitzer.png" alt="Styling4You Registrierung" /></div>
+          <figcaption>Registrierung – Salon</figcaption>
         </figure>
 
         <figure class="shot">
-          <div class="imgwrap"><img src="dashboard_uebersicht.png" alt="Dashboard Übersicht" /></div>
+          <div class="imgwrap"><img src="dashboard_uebersicht.png" alt="Styling4You Dashboard" /></div>
           <figcaption>Dashboard – Übersicht</figcaption>
         </figure>
       </div>
     </section>
 
-    <!-- ZETA PARK -->
+    <!-- Zeta Park -->
     <section id="zetapark">
       <div class="section-title">
         <h2>Zeta Park</h2>
-        <span class="hint">Case Study</span>
+        <span class="hint">Verwaltung · Reports · Admin-Workflows</span>
       </div>
 
       <div class="kpi">
-        <div class="card glass"><strong>Stack</strong><span>Flutter · Firebase · (Push/Notifications)</span></div>
-        <div class="card glass"><strong>Rollen</strong><span>Admin Panel · Nutzer/Haushalt</span></div>
-        <div class="card glass"><strong>Finanzen</strong><span>Einnahmen/Ausgaben · Perioden · Auswertungen</span></div>
-        <div class="card glass"><strong>UX</strong><span>KPI-Karten + Charts</span></div>
+        <div class="card glass"><strong>Fokus</strong><span>Finanzen · Zahlungen · Übersichten</span></div>
+        <div class="card glass"><strong>Reports</strong><span>Monatliche Auswertungen</span></div>
+        <div class="card glass"><strong>Admin</strong><span>Verwaltung & Steuerung</span></div>
+        <div class="card glass"><strong>Status</strong><span>Test / Iteration</span></div>
       </div>
 
       <div style="height:12px"></div>
 
-      <div class="projects">
-        <div class="project-card glass">
-          <h3>Problem</h3>
-          <p>Zahlungen, Dokumente und Erinnerungen sind oft verteilt (Papier/WhatsApp) und schwer nachzuvollziehen.</p>
+      <div class="grid">
+        <div class="card glass">
+          <div class="tag">Problem</div>
+          <p>Manuelle Abrechnung, fehlende Transparenz und unübersichtliche Listen machen Verwaltung langsam und fehleranfällig.</p>
         </div>
-
-        <div class="project-card glass">
-          <h3>Lösung</h3>
-          <p>App für Verwaltung: Zahlungseingänge, offene Posten, Ausgaben, Auswertungen und Admin-Funktionen.</p>
+        <div class="card glass">
+          <div class="tag">Lösung</div>
+          <p>Eine App mit klaren Dashboards, Zahlungsübersichten und Reports – schnell erfassbar und jederzeit aktuell.</p>
         </div>
-
-        <div class="project-card glass">
-          <h3>Highlights</h3>
-          <ul>
-            <li>Admin Panel (Benachrichtigungen, Zahlungen)</li>
-            <li>Bilanz & Charts</li>
-            <li>Monatsübersicht / Reports</li>
-            <li>Offene Zahlungen / Erinnerungen</li>
-          </ul>
+        <div class="card glass">
+          <div class="tag">Mehrwert</div>
+          <p>Einheitliche Workflows für Verwaltung, offene Posten und visuelle Auswertungen für Entscheidungen.</p>
         </div>
       </div>
 
@@ -385,13 +373,9 @@
 
       <div class="section-title">
         <h2>Zeta Park – Screenshots</h2>
-        <span class="hint">Platzhalter-Dateinamen (du kannst sie später ersetzen/umbenennen)</span>
+        <span class="hint">Dateien liegen im Root neben index.html</span>
       </div>
 
-      <!-- ZETA-PARK BILDER:
-           Lege die Dateien z.B. ins Root ODER in assets/screens/ ab.
-           Wenn assets/screens/, dann src="assets/screens/zetapark_01.png" usw.
-      -->
       <div class="shots">
         <figure class="shot">
           <div class="imgwrap"><img src="zetapark_01.png" alt="Zeta Park Screenshot 1" /></div>
@@ -400,33 +384,133 @@
 
         <figure class="shot">
           <div class="imgwrap"><img src="zetapark_02.png" alt="Zeta Park Screenshot 2" /></div>
-          <figcaption>Bilanz – Einnahmen vs Ausgaben</figcaption>
+          <figcaption>Bilançо – Zeitraum & Kennzahlen</figcaption>
         </figure>
 
         <figure class="shot">
           <div class="imgwrap"><img src="zetapark_03.png" alt="Zeta Park Screenshot 3" /></div>
-          <figcaption>Admin Panel</figcaption>
+          <figcaption>Admin Panel – Verwaltung</figcaption>
         </figure>
 
         <figure class="shot">
           <div class="imgwrap"><img src="zetapark_04.png" alt="Zeta Park Screenshot 4" /></div>
-          <figcaption>Mali Durum – Monatsstatus</figcaption>
+          <figcaption>Mali Durum – Details</figcaption>
         </figure>
 
         <figure class="shot">
           <div class="imgwrap"><img src="zetapark_05.png" alt="Zeta Park Screenshot 5" /></div>
-          <figcaption>Kategorien + Trend</figcaption>
+          <figcaption>Gider Kategorien – Trends</figcaption>
         </figure>
       </div>
     </section>
 
-    <!-- KONTAKT -->
+    <!-- Halva App -->
+    <section id="halva">
+      <div class="section-title">
+        <h2>Halva App (Helvaci Ali Bochum)</h2>
+        <span class="hint">Menü · Aktionen · Galerie · Realtime Angebote</span>
+      </div>
+
+      <div class="kpi">
+        <div class="card glass"><strong>Realtime</strong><span>Angebotsänderungen erscheinen sofort</span></div>
+        <div class="card glass"><strong>Content</strong><span>Menü & Preisliste · Produktdetails</span></div>
+        <div class="card glass"><strong>Marketing</strong><span>Special Offers / Highlights</span></div>
+        <div class="card glass"><strong>Admin</strong><span>Verstecktes Admin Panel (Kombination)</span></div>
+      </div>
+
+      <div style="height:12px"></div>
+
+      <div class="grid">
+        <div class="card glass">
+          <div class="tag">Problem</div>
+          <p>Aktuelle Angebote, Preise und Highlights sind oft verteilt (Social/Website) und werden nicht sofort gefunden.</p>
+        </div>
+        <div class="card glass">
+          <div class="tag">Lösung</div>
+          <p>Eine App als digitale Menü- & Angebotsplattform mit klarer Navigation und starken Produktvisuals.</p>
+        </div>
+        <div class="card glass">
+          <div class="tag">Realtime + Admin</div>
+          <p>Änderungen durch Admin werden in Realtime ausgespielt. Admin-Bereich ist versteckt und wird per Kombination freigeschaltet.</p>
+        </div>
+      </div>
+
+      <div style="height:12px"></div>
+
+      <div class="grid">
+        <div class="card glass">
+          <div class="tag">Hauptfunktionen</div>
+          <ul>
+            <li>Menü & Preisliste mit Suche und Kategorien</li>
+            <li>Produktdetails (Beschreibung, Optionen, Toppings)</li>
+            <li>Special Offers / Aktuelle Informationen</li>
+            <li>Produktgalerie / Highlights</li>
+          </ul>
+        </div>
+
+        <div class="card glass">
+          <div class="tag">Realtime-Logik</div>
+          <ul>
+            <li>Admin ändert Angebote/Preise</li>
+            <li>UI aktualisiert sich sofort (Streams)</li>
+            <li>Keine veralteten Screens</li>
+            <li>Ideal für Aktionen & Tagesdeals</li>
+          </ul>
+        </div>
+
+        <div class="card glass">
+          <div class="tag">Sicherheit</div>
+          <ul>
+            <li>Admin Panel nicht öffentlich sichtbar</li>
+            <li>Freischaltung über Kombination</li>
+            <li>Rollen/Regeln serverseitig absichern</li>
+            <li>Saubere Trennung von User/Admin</li>
+          </ul>
+        </div>
+      </div>
+
+      <div style="height:12px"></div>
+
+      <div class="section-title">
+        <h2>Halva App – Screenshots</h2>
+        <span class="hint">Dateien liegen im Root neben index.html</span>
+      </div>
+
+      <div class="shots">
+        <figure class="shot">
+          <div class="imgwrap"><img src="helva_01.png" alt="Halva App Screenshot 1" /></div>
+          <figcaption>Menü & Preisliste</figcaption>
+        </figure>
+
+        <figure class="shot">
+          <div class="imgwrap"><img src="helva_02.png" alt="Halva App Screenshot 2" /></div>
+          <figcaption>Produktdetails</figcaption>
+        </figure>
+
+        <figure class="shot">
+          <div class="imgwrap"><img src="helva_03.png" alt="Halva App Screenshot 3" /></div>
+          <figcaption>Aktuelle Informationen / Deals</figcaption>
+        </figure>
+
+        <figure class="shot">
+          <div class="imgwrap"><img src="helva_04.png" alt="Halva App Screenshot 4" /></div>
+          <figcaption>Promo / Einstieg</figcaption>
+        </figure>
+
+        <figure class="shot">
+          <div class="imgwrap"><img src="helva_05.png" alt="Halva App Screenshot 5" /></div>
+          <figcaption>Produktgalerie</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- Kontakt -->
     <section id="kontakt">
       <div class="section-title">
         <h2>Kontakt</h2>
         <span class="hint">Schnell erreichbar</span>
       </div>
-      <div class="project-card glass">
+      <div class="card glass">
         <p><strong>E-Mail:</strong> <a href="mailto:dennis.durmus@hotmail.de">dennis.durmus@hotmail.de</a></p>
         <p><strong>GitHub:</strong> <a href="https://github.com/Serveronline73">github.com/Serveronline73</a></p>
         <p><strong>Profil:</strong> Junior Mobile Developer · Flutter · Firebase · Realtime Apps</p>
@@ -439,8 +523,6 @@
 
   </div>
 
-  <script>
-    document.getElementById("y").textContent = new Date().getFullYear();
-  </script>
+  <script>document.getElementById("y").textContent=new Date().getFullYear();</script>
 </body>
 </html>
