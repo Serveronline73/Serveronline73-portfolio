@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Portfolio | Dennis Durmus</title>
   <meta name="description" content="Portfolio von Dennis Durmus: Flutter + Firebase Apps (Styling4You, Zeta Park) mit Realtime, Rollen & Push." />
+
   <style>
     :root{
       --bg0:#070b14;
@@ -39,6 +40,7 @@
       background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='180' height='180'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='180' height='180' filter='url(%23n)' opacity='.55'/%3E%3C/svg%3E");
     }
 
+    a{color:var(--txt)}
     .wrap{max-width:1120px;margin:0 auto;padding:28px 18px 44px}
     .glass{
       background:var(--card);
@@ -92,24 +94,28 @@
     }
 
     section{padding:26px 0}
-    .section-title{display:flex; align-items:flex-end; justify-content:space-between; gap:10px; margin:0 0 12px}
+    .section-title{
+      display:flex; align-items:flex-end; justify-content:space-between; gap:10px;
+      margin:0 0 12px
+    }
     h2{margin:0;font-size:22px}
     h3{margin:0 0 6px;font-size:16px}
-    .hint{color:var(--mut); font-size:13px}
-
     p{margin:0 0 10px;color:var(--mut);line-height:1.65}
     ul{margin:10px 0 0 18px;color:var(--mut);line-height:1.6}
+    .hint{color:var(--mut); font-size:13px}
 
     .kpi{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}
     .kpi .card{padding:12px}
     .kpi strong{display:block;font-size:13px;color:var(--txt)}
     .kpi span{display:block;margin-top:6px;color:var(--mut);font-size:13px}
 
-    /* Projekte-Grid */
     .projects{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
     .project-card{padding:14px}
     .project-card p{margin:0;color:var(--mut)}
-    .project-card .meta{margin-top:10px; display:flex; flex-wrap:wrap; gap:8px}
+    .project-card a{color:inherit;text-decoration:none;display:block}
+    .project-card.glass{transition:transform .15s ease, border-color .15s ease}
+    .project-card.glass:hover{transform:translateY(-2px); border-color:rgba(79,140,255,.25)}
+    .meta{margin-top:10px; display:flex; flex-wrap:wrap; gap:8px}
     .pill{
       font-size:12px;
       color:var(--txt);
@@ -118,12 +124,7 @@
       border:1px solid rgba(255,255,255,.10);
       background:rgba(255,255,255,.05);
     }
-    .project-card a{color:inherit; text-decoration:none}
-    .project-card:hover{border-color:rgba(79,140,255,.25)}
-    .project-card.glass{transition:transform .15s ease, border-color .15s ease}
-    .project-card.glass:hover{transform:translateY(-2px)}
 
-    /* Screenshots */
     .shots{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}
     figure.shot{
       margin:0;
@@ -203,7 +204,7 @@
       </div>
     </header>
 
-    <!-- PROJEKTE GRID -->
+    <!-- PROJEKTE -->
     <section id="projects">
       <div class="section-title">
         <h2>Projekte</h2>
@@ -224,7 +225,7 @@
         <div class="project-card glass">
           <a href="#zetapark">
             <h3>Zeta Park</h3>
-            <p>Community/Objekt-Management: Zahlungen, Ausgaben, Charts, PDFs & Push-Erinnerungen (Admin/Nutzer).</p>
+            <p>Community/Objekt-Management: Zahlungen, Ausgaben, Charts, PDFs & Erinnerungen (Admin/Nutzer).</p>
             <div class="meta">
               <span class="pill">Flutter</span><span class="pill">Firebase</span><span class="pill">Admin Panel</span>
             </div>
@@ -259,7 +260,7 @@
 
       <div style="height:12px"></div>
 
-      <div class="projects" style="grid-template-columns:repeat(3,1fr)">
+      <div class="projects">
         <div class="project-card glass">
           <h3>Problem</h3>
           <p>Manuelle Terminverwaltung und verstreute Kommunikation führen zu Doppelbuchungen und hohem Aufwand.</p>
@@ -278,7 +279,7 @@
 
       <div style="height:12px"></div>
 
-      <div class="projects" style="grid-template-columns:repeat(3,1fr)">
+      <div class="projects">
         <div class="project-card glass">
           <h3>Hauptfunktionen</h3>
           <ul>
@@ -310,8 +311,37 @@
 
       <div style="height:12px"></div>
 
-       
+      <div class="section-title">
+        <h2>Styling4You – Screenshots</h2>
+        <span class="hint">Aktuell: Dateinamen wie im Repo (Root oder assets/screens – bei Bedarf Pfad ergänzen)</span>
+      </div>
 
+      <!-- WICHTIG:
+           Wenn deine Bilder in assets/screens/ liegen, ergänze bei jedem src vorne: assets/screens/
+           Beispiel: src="assets/screens/start_screen.png"
+      -->
+      <div class="shots">
+        <figure class="shot">
+          <div class="imgwrap"><img src="start_screen.png" alt="Startscreen" /></div>
+          <figcaption>Start – Rollenwahl (Salon/Kunde)</figcaption>
+        </figure>
+
+        <figure class="shot">
+          <div class="imgwrap"><img src="anmelde_screen_salon_besitzer.png" alt="Salon Login" /></div>
+          <figcaption>Salon-Besitzer – Login</figcaption>
+        </figure>
+
+        <figure class="shot">
+          <div class="imgwrap"><img src="register_screen_salon_besitzer.png" alt="Salon Registrierung" /></div>
+          <figcaption>Salon Registrierung – Geschäftstyp</figcaption>
+        </figure>
+
+        <figure class="shot">
+          <div class="imgwrap"><img src="dashboard_uebersicht.png" alt="Dashboard Übersicht" /></div>
+          <figcaption>Dashboard – Übersicht</figcaption>
+        </figure>
+      </div>
+    </section>
 
     <!-- ZETA PARK -->
     <section id="zetapark">
@@ -324,12 +354,12 @@
         <div class="card glass"><strong>Stack</strong><span>Flutter · Firebase · (Push/Notifications)</span></div>
         <div class="card glass"><strong>Rollen</strong><span>Admin Panel · Nutzer/Haushalt</span></div>
         <div class="card glass"><strong>Finanzen</strong><span>Einnahmen/Ausgaben · Perioden · Auswertungen</span></div>
-        <div class="card glass"><strong>UX</strong><span>Klare KPI-Karten + Charts</span></div>
+        <div class="card glass"><strong>UX</strong><span>KPI-Karten + Charts</span></div>
       </div>
 
       <div style="height:12px"></div>
 
-      <div class="projects" style="grid-template-columns:repeat(3,1fr)">
+      <div class="projects">
         <div class="project-card glass">
           <h3>Problem</h3>
           <p>Zahlungen, Dokumente und Erinnerungen sind oft verteilt (Papier/WhatsApp) und schwer nachzuvollziehen.</p>
@@ -355,45 +385,50 @@
 
       <div class="section-title">
         <h2>Zeta Park – Screenshots</h2>
-        <span class="hint">Pfad: assets/screens/zetapark/</span>
+        <span class="hint">Platzhalter-Dateinamen (du kannst sie später ersetzen/umbenennen)</span>
       </div>
 
+      <!-- ZETA-PARK BILDER:
+           Lege die Dateien z.B. ins Root ODER in assets/screens/ ab.
+           Wenn assets/screens/, dann src="assets/screens/zetapark_01.png" usw.
+      -->
       <div class="shots">
         <figure class="shot">
-          <div class="imgwrap"><img src="assets/projects/zetapark/01.png" alt="Zeta Park Screenshot 1" /></div>
-          <figcaption>Start / Zeta Park Übersicht</figcaption>
+          <div class="imgwrap"><img src="zetapark_01.png" alt="Zeta Park Screenshot 1" /></div>
+          <figcaption>Start / Übersicht</figcaption>
         </figure>
 
         <figure class="shot">
-          <div class="imgwrap"><img src="assets/projects/zetapark/02.png" alt="Zeta Park Screenshot 2" /></div>
+          <div class="imgwrap"><img src="zetapark_02.png" alt="Zeta Park Screenshot 2" /></div>
           <figcaption>Bilanz – Einnahmen vs Ausgaben</figcaption>
         </figure>
 
         <figure class="shot">
-          <div class="imgwrap"><img src="assets/projects/zetapark/03.png" alt="Zeta Park Screenshot 3" /></div>
-          <figcaption>Admin Panel – Funktionen</figcaption>
+          <div class="imgwrap"><img src="zetapark_03.png" alt="Zeta Park Screenshot 3" /></div>
+          <figcaption>Admin Panel</figcaption>
         </figure>
 
         <figure class="shot">
-          <div class="imgwrap"><img src="assets/projects/zetapark/04.png" alt="Zeta Park Screenshot 4" /></div>
-          <figcaption>Monatsstatus – Mali Durum</figcaption>
+          <div class="imgwrap"><img src="zetapark_04.png" alt="Zeta Park Screenshot 4" /></div>
+          <figcaption>Mali Durum – Monatsstatus</figcaption>
         </figure>
 
         <figure class="shot">
-          <div class="imgwrap"><img src="assets/projects/zetapark/05.png" alt="Zeta Park Screenshot 5" /></div>
+          <div class="imgwrap"><img src="zetapark_05.png" alt="Zeta Park Screenshot 5" /></div>
           <figcaption>Kategorien + Trend</figcaption>
         </figure>
       </div>
     </section>
 
+    <!-- KONTAKT -->
     <section id="kontakt">
       <div class="section-title">
         <h2>Kontakt</h2>
         <span class="hint">Schnell erreichbar</span>
       </div>
       <div class="project-card glass">
-        <p><strong>E-Mail:</strong> <a href="mailto:dennis.durmus@hotmail.de" style="color:var(--txt)">dennis.durmus@hotmail.de</a></p>
-        <p><strong>GitHub:</strong> <a href="https://github.com/Serveronline73" style="color:var(--txt)">github.com/Serveronline73</a></p>
+        <p><strong>E-Mail:</strong> <a href="mailto:dennis.durmus@hotmail.de">dennis.durmus@hotmail.de</a></p>
+        <p><strong>GitHub:</strong> <a href="https://github.com/Serveronline73">github.com/Serveronline73</a></p>
         <p><strong>Profil:</strong> Junior Mobile Developer · Flutter · Firebase · Realtime Apps</p>
       </div>
     </section>
@@ -404,6 +439,8 @@
 
   </div>
 
-  <script>document.getElementById("y").textContent=new Date().getFullYear();</script>
+  <script>
+    document.getElementById("y").textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
