@@ -1,6 +1,6 @@
-# Styling4You Portfolio
+# Beauty4You Portfolio
 ## Überblick
-Dies ist mein persönliches Portfolio für die App Styling4You, eine Friseur-App zur Terminverwaltung und Servicebuchung.
+Dies ist mein persönliches Portfolio für die App Beauty4You, eine Friseur- und Beauty-App zur Terminverwaltung und Servicebuchung.
 
 ## Kernkompetenzen
 - **Mobile-Entwicklung mit Flutter**
@@ -9,14 +9,14 @@ Dies ist mein persönliches Portfolio für die App Styling4You, eine Friseur-App
 - **Nutzerzentrierte Produktentwicklung**
 - **Praktische Problemlösung**
 
-## Beispielprojekt: Styling4You
-Styling4You ist eine digitale Salon und Terminverwaltungs-App für Beauty-Studios und Salons. Sie vereinfacht Buchungen, Servicekataloge und die Kundenkommunikation.
+## Beispielprojekt: Beauty4You
+Beauty4You ist eine digitale Salon- und Terminverwaltungs-App für Beauty-Studios und Salons. Sie vereinfacht Buchungen, Servicekataloge und die Kundenkommunikation.
 
 ## Problem
 Salons arbeiten häufig mit manuellen Terminbüchern und verstreuten Kommunikationskanälen. Das führt zu verpassten Buchungen, ineffizienter Planung und einer schlechten Kundenerfahrung.
 
 ### Lösung
-Styling4You bietet eine einheitliche Plattform, auf der Kunden Dienstleistungen durchsuchen, Termine buchen und Bestätigungen erhalten, während Salonbesitzer ihren Kalender, ihre Services und die Verfügbarkeit des Personals verwalten.
+Beauty4You bietet eine einheitliche Plattform, auf der Kunden Dienstleistungen durchsuchen, Termine buchen und Bestätigungen erhalten, während Salonbesitzer ihren Kalender, ihre Services und die Verfügbarkeit des Personals verwalten.
 
 ### Hauptfunktionen
 - **Servicekatalog:** Benutzerfreundliches Durchsuchen von Dienstleistungen nach Kategorie.
@@ -26,35 +26,24 @@ Styling4You bietet eine einheitliche Plattform, auf der Kunden Dienstleistungen 
 - **Analytics:** Einfache Auswertungen zu Buchungen und Trends.
 - **Echtzeit -Synchronisierung:** Alle Änderungen, die der Salon-Benutzer in der App macht – etwa Öffnungszeiten, Serviceverwaltung, Kundeninformationen oder Galerie-Bilder – werden unmittelbar aktualisiert, sodass Kunden immer auf dem neuesten Stand bleiben.
 
-### Screenshots – Salon- & Kundenansicht
-Die folgenden Bilder zeigen ausgewählte Bereiche der App. Mit der HTML -Einbettung werden die Screenshots verkleinert dargestellt und nebeneinander angeordnet, um eine bessere Übersichtlichkeit zu gewährleisten.
+### Screenshots – App Store Stand
+Die folgenden Bilder zeigen den aktuellen Stand der App (Beauty4You):
 
 <p>
-<img src="start_screen.png" alt="Registrierungsseite" width="200"/>
-<img src="anmelde_screen_salon_besitzer.png" alt="App-Startseite" width="200"/>
-<img src="register_screen_salon_besitzer.png" alt="Login-Seite" width="200"/>
+<img src="assets/screens/beauty4you/01_welcome.png" alt="Welcome" width="180"/>
+<img src="assets/screens/beauty4you/02_business_types.png" alt="Business Types" width="180"/>
+<img src="assets/screens/beauty4you/03_dashborad.png" alt="Dashboard" width="180"/>
+<img src="assets/screens/beauty4you/04_services.png" alt="Services" width="180"/>
+<img src="assets/screens/beauty4you/05_service_overwiev.png" alt="Service Overview" width="180"/>
 </p>
 <p>
-<img src="dashboard_uebersicht.png" alt="Salon-Dashboard" width="200"/>
-<img src="einstellung_screen.png" alt="Kundenansicht" width="200"/>
-<img src="salon_personalisieren_screen.png" alt="Feature-Details" width="200"/>
+<img src="assets/screens/beauty4you/06_settings.png" alt="Settings" width="180"/>
+<img src="assets/screens/beauty4you/07_invite_customers.png" alt="Invite Customers" width="180"/>
+<img src="assets/screens/beauty4you/08_booking__overview.png" alt="Booking Overview" width="180"/>
+<img src="assets/screens/beauty4you/09_daily_calendar__view.png" alt="Daily Calendar" width="180"/>
+<img src="assets/screens/beauty4you/10_customer__interface.png" alt="Customer Interface" width="180"/>
 </p>
-<p>
-<img src="oeffnungszeiten_screen.png" alt="Weitere Funktionen 1" width="200"/>
-<img src="kunden_information_screen.png" alt="Weitere Funktionen 2" width="200"/>
-<img src="service_verwalten.png" alt="Weitere Funktionen 3" width="200"/>
-</p>
-<p> 
-<img src="service_bearbeiten.png" width="200"/>
-<img src="mitarbeiter_uebersicht.png" width="200"/>
-<img src="mitarbeiter_skils.png" width="200"/>
-</p>
-<p> 
-<img src="salon_termine.png" width="200"/>
-<img src="kalender_ansicht.png" width="200"/>
-<img src="termin_tagesuebersicht.png" width="200"/>
-</p>
-<p> 
+
 
 
 
